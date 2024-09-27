@@ -15,7 +15,7 @@ export class TestErrorsComponent {
   validationErrors: string[] = [];
 
   get400Error() {
-    this.http.get(this.baseUrl + 'buggy/bad-result').subscribe({
+    this.http.get(this.baseUrl + 'buggy/bad-request').subscribe({
       next: response => console.log(response),
       error: error => console.log(error)
     })
